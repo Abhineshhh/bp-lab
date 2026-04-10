@@ -22,6 +22,9 @@ import (
 // Producer waits until consumer is ready. Nothing is lost. Throughput = slowest side.
 
 func BlockingPipeline() {
+
+	fmt.Printf("\nImplementing Blocking strategy : \n")
+
 	ch := make(chan int) // dataqsiz=0, buf=nil
 
 	var wg sync.WaitGroup

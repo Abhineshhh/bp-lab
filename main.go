@@ -6,8 +6,11 @@ import (
 )
 
 func main() {
-	fmt.Println("Hii ! Lets Implement backpressure in Streaming APIs")
+	fmt.Printf("\nHii ! Lets Implement backpressure in Streaming APIs \n")
 
-	// internal.BlockingPipeline() // Block Strategy
+	internal.BlockingPipeline() // Block Strategy
 	internal.DroppingPipeline() // Drop Strategy
+	internal.BufferedPipeline() // Buffer Strategy
+	internal.BatchPipeline()    // Reshape Strategy - Batch
+
 }

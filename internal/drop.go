@@ -7,6 +7,9 @@ import (
 
 // Producer never waits. If channel is full, item is thrown away. Fast but lossy.
 func DroppingPipeline() {
+
+	fmt.Printf("\nImplementing Dropping strategy : \n")
+
 	ch := make(chan int, 3) // buffer of 3
 
 	// producer
